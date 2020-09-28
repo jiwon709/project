@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.my.ssday0919.vo.Ss_nrVO" alias="ss_nrVO"/>
+		<typeAlias type="com.my.ssday0919.vo.drugVO" alias="drugVO"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="mapper/ss_nrMapper.xml" />
+		<mapper resource="mapper/uploadMapper.xml" />
+	</mappers>
+</configuration>

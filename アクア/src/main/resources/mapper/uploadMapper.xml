@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.ssday0919.dao.uploadMapper">
+
+<select id="upload" parameterType="java.util.HashMap" resultType="drugVO">
+
+	select * from drug 
+		where
+		<foreach item="param" index="index" collection="param" separator="or" open="(" close=")">
+			color like '%'||#{param}||'%'
+		</foreach>
+	and (
+	 
+		<foreach item="param" index="index" collection="param" separator="or" open="(" close=")">
+			display_f like '%'||#{param}||'%'
+		</foreach>
+		or
+		<foreach item="param" index="index" collection="param" separator="or" open="(" close=")">
+			display_b like '%'||#{param}||'%'
+		</foreach>
+		 )
+		 
+</select>
+	
+
+	
+</mapper>
+
+
+
+
+

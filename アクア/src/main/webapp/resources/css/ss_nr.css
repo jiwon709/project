@@ -1,0 +1,13 @@
+.u-section-1 .u-sheet-1 {min-height: 500px}
+.u-section-1 .u-form-1 {height: 125px; margin: 20px 7px 0 0}
+.u-section-1 .u-form-group-1 {margin-left: 0}
+.u-section-1 .u-table-1 {width: 426px; margin: 30px auto 60px 0}
+.u-block-82cb-59 {height: 46px}
+.u-block-82cb-53 {height: 46px} 
+
+@media (max-width: 1199px){ .u-section-1 .u-form-1 {width: 470px; margin-right: 0} }
+
+@media (max-width: 575px){ .u-section-1 .u-form-1 {width: 340px}
+.u-section-1 .u-form-group-1 {width: 100%}
+.u-section-1 .u-form-group-2 {width: 100%}
+.u-section-1 .u-table-1 {width: 340px} }

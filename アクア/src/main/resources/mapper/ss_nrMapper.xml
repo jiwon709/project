@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.ssday0919.dao.Ss_nrMapper">
+	
+	<select id="getnrlist" resultType="ss_nrVO">
+		SELECT
+			*
+		FROM
+			ss_nr
+	</select>
+	
+	<select id="searchnrlist" parameterType="String" resultType="ss_nrVO">
+		SELECT
+			*
+		FROM
+			ss_nr
+		WHERE
+			PRDCT_NM LIKE '%' || #{PRDCT_NM} || '%'
+	</select>
+
+<select id="thenr" parameterType="String" resultType="ss_nrVO">
+	SELECT * FROM ss_nr WHERE PRDCT_NM = #{PRDCT_NM}
+</select>
+	
+	<!-- PRDCT_NM, -->
+<!-- IFTKN_ATNT_MATR_CN,  -->
+<!-- PRIMARY_FNCLTY,  -->
+<!-- DAY_INTK_LOWLIMIT,  -->
+<!-- DAY_INTK_HIGHLIMIT,  -->
+<!-- INTK_UNIT,  -->
+<!-- INTK_MEMO,  -->
+<!-- SKLL_IX_IRDNT_RAWMTRL,  -->
+<!-- CRET_DTM,  -->
+<!-- LAST_UPDT_DTM -->
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
